@@ -40,7 +40,7 @@ class AppBarTitle extends StatelessWidget {
               ),
               Tab(
                 icon: Icon(
-                  Icons.chat,
+                  Icons.history_sharp,
                   color: Colors.amber,
                 ),
               ),
