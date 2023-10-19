@@ -21,11 +21,39 @@ class AppBarTitle extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          centerTitle: true,
-          title: const Text(' A P P   B A R   W H A T S A P P'),
+          actions: const [
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  child: Icon(
+                    Icons.camera_alt_outlined,
+                    color: Color.fromRGBO(255, 255, 255, 1),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  child: Icon(
+                    Icons.search_outlined,
+                    color: Color.fromRGBO(255, 255, 255, 1),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  child: Icon(
+                    Icons.more_vert_outlined,
+                    color: Color.fromRGBO(255, 255, 255, 1),
+                  ),
+                ),
+              ],
+            )
+          ],
+          title: const Text('WhatsApp',
+              style: TextStyle(fontWeight: FontWeight.w400)),
         ),
         body: const Column(children: [
           TabBar(
+            // overlayColor: ,
             tabs: [
               Tab(
                 icon: Icon(
