@@ -24,14 +24,23 @@ class AppBarTitle extends StatelessWidget {
           body: const TabBar(
             tabs: [
               Tab(
-                icon: Icon(Icons.chat),
+                icon: Icon(
+                  Icons.chat,
+                  color: Colors.amber,
+                ),
               ),
               Tab(
-                icon: Icon(Icons.chat),
+                icon: Icon(
+                  Icons.chat,
+                  color: Colors.amber,
+                ),
               ),
               Tab(
-                icon: Icon(Icons.chat),
-              )
+                icon: Icon(
+                  Icons.chat,
+                  color: Colors.amber,
+                ),
+              ),
             ],
           )),
     );
