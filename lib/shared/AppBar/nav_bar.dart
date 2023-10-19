@@ -51,6 +51,7 @@ class AppBarTitle extends StatelessWidget {
           title: const Text('WhatsApp',
               style: TextStyle(fontWeight: FontWeight.w400)),
         ),
+        // backgroundColor: const Color.fromRGBO(18, 140, 126, 1),
         body: const Column(children: [
           TabBar(
             // overlayColor: ,
