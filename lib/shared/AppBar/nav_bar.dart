@@ -17,11 +17,12 @@ class AppBarTitle extends StatelessWidget {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-          appBar: AppBar(
-            centerTitle: true,
-            title: const Text(' A P P  B A R '),
-          ),
-          body: const TabBar(
+        appBar: AppBar(
+          centerTitle: true,
+          title: const Text(' A P P   B A R   W H A T S A P P'),
+        ),
+        body: const Column(children: [
+          TabBar(
             tabs: [
               Tab(
                 icon: Icon(
@@ -42,7 +43,10 @@ class AppBarTitle extends StatelessWidget {
                 ),
               ),
             ],
-          )),
+          ),
+          TabBarView(children: [])
+        ]),
+      ),
     );
   }
 }

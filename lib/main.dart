@@ -14,7 +14,9 @@ class Master extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: const AppBarClient(),
-      theme: ThemeData(primarySwatch: Colors.amber),
+      theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(
+              seedColor: const Color.fromRGBO(18, 140, 126, 1))),
     );
   }
 }
