@@ -47,14 +47,12 @@ class AppBarTitle extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
-            height: 850,
-            child: TabBarView(children: [
-              ChatScreenView(),
-              HistoriesScreenView(),
-              CallsScreenView()
-            ]),
-          ),
+          Expanded(
+              child: TabBarView(children: [
+            ChatScreenView(),
+            HistoriesScreenView(),
+            CallsScreenView()
+          ]))
         ]),
       ),
     );
