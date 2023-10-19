@@ -5,7 +5,7 @@ class AppBarClient extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: AppBarTitle());
+    return const AppBarTitle();
   }
 }
 

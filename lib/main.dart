@@ -11,6 +11,10 @@ class Master extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const AppBarClient();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: const AppBarClient(),
+      theme: ThemeData(primarySwatch: Colors.amber),
+    );
   }
 }
