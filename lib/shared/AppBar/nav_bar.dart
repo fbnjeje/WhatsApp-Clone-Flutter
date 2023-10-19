@@ -1,8 +1,4 @@
-import 'package:clone_whatsapp/screens/views/calls_screen.dart';
-import 'package:clone_whatsapp/screens/views/histories_screen.dart';
 import 'package:flutter/material.dart';
-
-import '../../screens/views/chat_screen.dart';
 
 class AppBarClient extends StatelessWidget {
   const AppBarClient({super.key});
@@ -31,28 +27,23 @@ class AppBarTitle extends StatelessWidget {
               Tab(
                 icon: Icon(
                   Icons.chat,
-                  color: Colors.amber,
+                  color: Color.fromRGBO(18, 140, 126, 1),
                 ),
               ),
               Tab(
                 icon: Icon(
-                  Icons.chat,
-                  color: Colors.amber,
+                  Icons.history_outlined,
+                  color: Color.fromRGBO(18, 140, 126, 1),
                 ),
               ),
               Tab(
                 icon: Icon(
-                  Icons.history_sharp,
-                  color: Colors.amber,
+                  Icons.call,
+                  color: Color.fromRGBO(18, 140, 126, 1),
                 ),
               ),
             ],
           ),
-          TabBarView(children: [
-            ChatScreenView(),
-            HistoriesScreenView(),
-            CallsScreenView()
-          ])
         ]),
       ),
     );
