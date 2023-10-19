@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'shared/AppBar/nav_bar.dart';
+
 void main() {
   runApp(const Master());
 }
@@ -9,6 +11,6 @@ class Master extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: );
+    return const AppBarClient();
   }
 }
