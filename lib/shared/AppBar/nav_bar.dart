@@ -14,10 +14,26 @@ class AppBarTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-      centerTitle: true,
-      title: const Text(' A P P  B A R '),
-    ));
+    return DefaultTabController(
+      length: 3,
+      child: Scaffold(
+          appBar: AppBar(
+            centerTitle: true,
+            title: const Text(' A P P  B A R '),
+          ),
+          body: const TabBar(
+            tabs: [
+              Tab(
+                icon: Icon(Icons.chat),
+              ),
+              Tab(
+                icon: Icon(Icons.chat),
+              ),
+              Tab(
+                icon: Icon(Icons.chat),
+              )
+            ],
+          )),
+    );
   }
 }
