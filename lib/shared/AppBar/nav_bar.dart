@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../screens/views/chat_screen.dart';
+
 class AppBarClient extends StatelessWidget {
   const AppBarClient({super.key});
 
@@ -44,7 +46,9 @@ class AppBarTitle extends StatelessWidget {
               ),
             ],
           ),
-          TabBarView(children: [])
+          TabBarView(children: [
+            ChatScreenView(),
+          ])
         ]),
       ),
     );
