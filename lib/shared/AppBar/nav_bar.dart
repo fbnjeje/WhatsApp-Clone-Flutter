@@ -1,3 +1,4 @@
+import 'package:clone_whatsapp/screens/views/histories_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../screens/views/chat_screen.dart';
@@ -48,6 +49,7 @@ class AppBarTitle extends StatelessWidget {
           ),
           TabBarView(children: [
             ChatScreenView(),
+            HistoriesScreenView(),
           ])
         ]),
       ),
