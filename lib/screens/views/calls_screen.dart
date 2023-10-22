@@ -5,6 +5,6 @@ class CallsScreenView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(child: const Center(child: Text('CallsScreenView')));
+    return const Center(child: Text('CallsScreenView'));
   }
 }

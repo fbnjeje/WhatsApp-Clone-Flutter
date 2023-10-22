@@ -5,9 +5,8 @@ class HistoriesScreenView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child: const Center(
+    return const Center(
       child: Text('HistoriesScreenView'),
-    ));
+    );
   }
 }
